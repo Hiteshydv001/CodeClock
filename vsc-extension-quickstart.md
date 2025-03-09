@@ -1,48 +1,75 @@
-# Welcome to your VS Code Extension
+# Code Clock Track - Quick Start Guide
 
-## What's in the folder
+Welcome to **Code Clock Track**, a Visual Studio Code extension that helps you track your coding time with a modern interface! This guide will show you how to use its features to monitor your productivity.
 
-* This folder contains all of the files necessary for your extension.
-* `package.json` - this is the manifest file in which you declare your extension and command.
-  * The sample plugin registers a command and defines its title and command name. With this information VS Code can show the command in the command palette. It doesn’t yet need to load the plugin.
-* `src/extension.ts` - this is the main file where you will provide the implementation of your command.
-  * The file exports one function, `activate`, which is called the very first time your extension is activated (in this case by executing the command). Inside the `activate` function we call `registerCommand`.
-  * We pass the function containing the implementation of the command as the second parameter to `registerCommand`.
+## How to Use It
+Follow these steps to start tracking your coding time with **Code Clock Track**.
 
-## Setup
+### Step 1: Launch the Timer Widget and Chart
+1. **Open the Command Palette:**
+   - Press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (Mac) to open the Command Palette.
+2. **Run the Command:**
+   - Type `Show Code Time Tracker` and select it from the dropdown.
+   - A webview panel will open to the right of your editor, displaying the **Timer Widget** and **Chart**.
 
-* install the recommended extensions (amodio.tsl-problem-matcher, ms-vscode.extension-test-runner, and dbaeumer.vscode-eslint)
+#### **The Timer Widget shows:**
+- **Total Time:** The cumulative time you’ve spent coding since tracking started.
+- **Active File:** The name of the file currently open in your editor.
+- **Pause/Resume Buttons:** Control tracking manually.
 
+#### **The Chart displays:**
+- A bar chart of time spent on each file you’ve edited.
 
-## Get up and running straight away
+---
 
-* Press `F5` to open a new window with your extension loaded.
-* Run your command from the command palette by pressing (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac) and typing `Hello World`.
-* Set breakpoints in your code inside `src/extension.ts` to debug your extension.
-* Find output from your extension in the debug console.
+### Step 2: Start Coding and Track Time
+1. **Open a File:**
+   - Open any file in your VS Code editor (e.g., `example.ts` or `script.js`).
+2. **Edit and Save:**
+   - Make changes to the file and save it (`Ctrl+S` or `Cmd+S`).
+   - **Code Clock Track** automatically logs the time you spend editing files.
+   - The **Total Time** in the Timer Widget will update every second as you work.
+   - The **Active File** will reflect the file you’re currently editing.
+   - The **Chart** will update to show the time spent on each file (in seconds).
 
-## Make changes
+---
 
-* You can relaunch the extension from the debug toolbar after changing code in `src/extension.ts`.
-* You can also reload (`Ctrl+R` or `Cmd+R` on Mac) the VS Code window with your extension to load your changes.
+### Step 3: Use the Pause/Resume Feature
+1. **Pause Tracking:**
+   - If you need to take a break, click the **Pause** button in the Timer Widget.
+   - The button will gray out, indicating tracking is paused, and time logging will stop.
+2. **Resume Tracking:**
+   - When you’re ready to continue, click the **Resume** button.
+   - The button will gray out, and tracking will resume, logging time again.
 
+---
 
-## Explore the API
+### Step 4: Monitor the Status Bar Clock
+- Look at the bottom-right corner of VS Code to see the **Status Bar Clock**.
+- It displays the time elapsed since the extension was activated (e.g., `Code Time: 0h 5m 23s`).
+- The clock updates every second, providing a quick glance at your session duration.
+- Hover over the clock to see a tooltip: `Total coding time since extension activation.`
 
-* You can open the full set of our API when you open the file `node_modules/@types/vscode/index.d.ts`.
+---
 
-## Run tests
+### Step 5: Analyze Your Productivity
+1. **Review Total Time:**
+   - The Timer Widget’s **Total Time** shows your overall coding session duration.
+2. **Inspect Per-File Time:**
+   - Scroll down to the **Chart** in the webview panel.
+   - Each bar represents a file you’ve edited, with the height indicating time spent (in seconds).
+   - Hover over a bar to see detailed information (e.g., file name and exact time).
 
-* Install the [Extension Test Runner](https://marketplace.visualstudio.com/items?itemName=ms-vscode.extension-test-runner)
-* Run the "watch" task via the **Tasks: Run Task** command. Make sure this is running, or tests might not be discovered.
-* Open the Testing view from the activity bar and click the Run Test" button, or use the hotkey `Ctrl/Cmd + ; A`
-* See the output of the test result in the Test Results view.
-* Make changes to `src/test/extension.test.ts` or create new test files inside the `test` folder.
-  * The provided test runner will only consider files matching the name pattern `**.test.ts`.
-  * You can create folders inside the `test` folder to structure your tests any way you want.
+---
 
-## Go further
+## Example Scenario
+1. Open a project in VS Code.
+2. Run `Show Code Time Tracker` to launch the webview.
+3. Open `script.js`, edit some code, and save. Notice the **Total Time** increment and the **Active File** update to `script.js`.
+4. Open `styles.css`, make changes, and save. The **Chart** now shows bars for both `script.js` and `styles.css`.
+5. Pause tracking during a break, then resume when you return.
+6. Check the **Status Bar Clock** to see how long your session has been running.
 
-* Reduce the extension size and improve the startup time by [bundling your extension](https://code.visualstudio.com/api/working-with-extensions/bundling-extension).
-* [Publish your extension](https://code.visualstudio.com/api/working-with-extensions/publishing-extension) on the VS Code extension marketplace.
-* Automate builds by setting up [Continuous Integration](https://code.visualstudio.com/api/working-with-extensions/continuous-integration).
+---
+
+### 🎯 **Stay Productive with Code Clock Track!**

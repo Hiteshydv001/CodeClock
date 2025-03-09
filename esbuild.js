@@ -18,7 +18,7 @@ const extensionOptions = {
   tsconfig: 'tsconfig.json',
 };
 
-// Common build options for webview
+// Common build options for webview (TimerWidget and Chart)
 const webviewOptions = {
   entryPoints: [resolve('src/webview/App.tsx')],
   bundle: true,
@@ -29,19 +29,20 @@ const webviewOptions = {
   minify: isProduction,
   target: 'es2020',
   tsconfig: 'tsconfig.json',
+  loader: { '.ttf': 'file' },
 };
 
-// Build the extension (CommonJS for VS Code)
+// Build the extension
 async function buildExtension() {
   try {
     if (isWatch) {
       const context = await esbuild.context({
         ...extensionOptions,
-        logLevel: 'info', // Shows rebuild logs in watch mode
+        logLevel: 'info',
       });
       await context.watch();
       console.log('👀 Watching extension for changes...');
-      return context; // Return context to keep it alive
+      return context;
     } else {
       await esbuild.build(extensionOptions);
       console.log('✅ Extension build completed');
@@ -52,17 +53,17 @@ async function buildExtension() {
   }
 }
 
-// Build the webview (ESM for browser)
+// Build the webview (TimerWidget and Chart)
 async function buildWebview() {
   try {
     if (isWatch) {
       const context = await esbuild.context({
         ...webviewOptions,
-        logLevel: 'info', // Shows rebuild logs in watch mode
+        logLevel: 'info',
       });
       await context.watch();
       console.log('👀 Watching webview for changes...');
-      return context; // Return context to keep it alive
+      return context;
     } else {
       await esbuild.build(webviewOptions);
       console.log('✅ Webview build completed');
@@ -73,7 +74,7 @@ async function buildWebview() {
   }
 }
 
-// Run both builds
+// Run builds
 async function runBuilds() {
   const extensionPromise = buildExtension();
   const webviewPromise = buildWebview();

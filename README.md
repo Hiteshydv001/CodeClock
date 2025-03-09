@@ -1,71 +1,92 @@
-# code-time-tracker README
+# Code Time Tracker
 
-This is the README for your extension "code-time-tracker". After writing up a brief description, we recommend including the following sections.
+Welcome to **Code Time Tracker**, a powerful and lightweight Visual Studio Code extension designed to help you track and analyze your coding time with a sleek and modern interface.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### ⏳ Real-Time Time Tracking
+- Automatically logs the time spent on each file while coding.
+- Updates the total time dynamically as you work.
 
-For example if there is an image subfolder under your extension project workspace:
+### 📊 Visual Analytics
+- Displays a **Timer Widget** showing:
+  - Total time spent coding.
+  - The active file being edited.
+  - Pause and resume buttons for manual control.
+- A **Bar Chart** visualizing time spent per file.
+- A **Status Bar Clock** in the bottom-right corner displaying elapsed time.
 
-\!\[feature X\]\(images/feature-x.png\)
+### 🎯 Pause/Resume Feature
+- Easily pause and resume tracking when taking breaks.
+- Ensures accuracy in logged coding hours.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### 📌 Persistent Data Tracking
+- Time logs persist even after restarting VS Code.
+- Helps maintain accurate long-term coding activity records.
+
+### ⚡ Lightweight and Non-Intrusive
+- Runs efficiently in the background without slowing down VS Code.
+
+## Installation
+
+1. Open Visual Studio Code.
+2. Go to the **Extensions Marketplace**.
+3. Search for `Code Time Tracker`.
+4. Click **Install**.
+5. Activate the extension by running `Show Code Time Tracker` from the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`).
+
+## How to Use
+
+### Step 1: Launch the Timer Widget
+- Open the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`).
+- Type `Show Code Time Tracker` and select it.
+- The Timer Widget and Chart will appear in a webview panel.
+
+### Step 2: Start Coding and Track Time
+- Open any file and start editing.
+- The **Total Time** updates dynamically.
+- The **Active File** section shows the currently edited file.
+- The **Bar Chart** updates with time spent on each file.
+
+### Step 3: Pause/Resume Tracking
+- Click the **Pause** button to stop tracking temporarily.
+- Click **Resume** to continue logging time.
+
+### Step 4: Monitor Time in the Status Bar
+- The **Status Bar Clock** displays total coding duration.
+- Hover over it for additional details.
 
 ## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- VS Code version `1.60.0` or later.
 
 ## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
 This extension contributes the following settings:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+- `codeTimeTracker.enable`: Enable/disable time tracking.
+- `codeTimeTracker.resetTime`: Reset tracked time manually.
 
 ## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- The timer may reset when VS Code crashes unexpectedly.
+- Performance may vary slightly on very large projects.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
+- Initial release of Code Time Tracker.
 
 ### 1.1.0
+- Added **Status Bar Clock**.
+- Improved performance and UI responsiveness.
 
-Added features X, Y, and Z.
+## Contributing
+We welcome contributions! If you’d like to improve this extension, submit a pull request or open an issue on GitHub.
+
+## Support
+For any issues or feature requests, please visit our [GitHub Repository](https://github.com/Hiteshydv001/CodeClock/issues).
+
+## License
+This extension is released under the [MIT License](LICENSE).
 
 ---
 
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Enjoy coding with **Code Time Tracker**! 🚀
