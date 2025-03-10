@@ -16,14 +16,15 @@ interface WebviewMessage {
 }
 
 export function activate(context: vscode.ExtensionContext) {
-  console.log('Code Time Tracker is activating!');
+  console.log('Code Clock Track is activating!');
   const storage = new Storage(context.globalState);
   const tracker = new TimeTracker(storage);
 
-  // Status Bar Clock
   const statusBarClock = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 100);
   statusBarClock.text = 'Code Time: 0h 0m 0s';
   statusBarClock.tooltip = 'Total coding time since extension activation';
+  statusBarClock.command = 'code-time-tracker.showWidget';
+  statusBarClock.backgroundColor = new vscode.ThemeColor('statusBarItem.warningBackground');
   statusBarClock.show();
   context.subscriptions.push(statusBarClock);
 
@@ -33,16 +34,15 @@ export function activate(context: vscode.ExtensionContext) {
     const hrs = Math.floor(statusBarTime / 3600);
     const mins = Math.floor((statusBarTime % 3600) / 60);
     const secs = statusBarTime % 60;
-    statusBarClock.text = `Code Time: ${hrs}h ${mins}m ${secs}s`;
+    statusBarClock.text = `⏳ Code Time: ${hrs}h ${mins}m ${secs}s`;
   };
   const statusBarInterval = setInterval(updateStatusBarClock, 1000);
   context.subscriptions.push({ dispose: () => clearInterval(statusBarInterval) });
 
-  // Webview Command (TimerWidget and Chart)
   const showWidgetCommand = vscode.commands.registerCommand('code-time-tracker.showWidget', () => {
     const panel = vscode.window.createWebviewPanel(
       'codeTimeTracker',
-      'Code Time Tracker',
+      'Code Clock Track',
       vscode.ViewColumn.Beside,
       {
         enableScripts: true,
@@ -68,8 +68,8 @@ export function activate(context: vscode.ExtensionContext) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="${tailwindUri}">
         <style>
-          body { margin: 0; padding: 0; background-color: #1e293b; }
-          #root { max-width: 600px; margin: 0 auto; padding: 1rem; }
+          body { margin: 0; padding: 0; }
+          #root { width: 100%; height: 100vh; }
         </style>
       </head>
       <body>

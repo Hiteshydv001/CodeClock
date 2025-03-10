@@ -27,7 +27,7 @@ const App: React.FC = () => {
     vscode.postMessage({ command: 'getStats' });
     const interval = setInterval(() => {
       vscode.postMessage({ command: 'getStats' });
-    }, 1000); // Update every second
+    }, 1000);
 
     return () => clearInterval(interval);
   }, []);
@@ -43,7 +43,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="p-4">
+    <div className="min-h-screen bg-gradient-to-b from-gray-950 to-gray-900 flex flex-col items-center justify-center p-8 space-y-10">
       <TimerWidget
         totalTime={totalTime}
         activeFile={activeFile}
