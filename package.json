@@ -1,13 +1,14 @@
 {
-  "name": "my-code-time-tracker",
-  "displayName": "Code clock tracker",
+  "name": "code-clock-tracker",
+  "displayName": "Code Clock Tracker",
   "publisher": "Codeclocktrack",
-  "description": "A VS Code extension to track coding time with charts and a status bar clock.",
-  "version": "0.1.0",
+  "description": "Boost your coding productivity with Code Clock Tracker - a lightweight VS Code extension that tracks coding time, provides insightful charts, and displays a live coding timer in the status bar.",
+  "version": "0.6.0",
   "engines": {
     "vscode": "^1.60.0"
   },
   "categories": [
+    "Productivity",
     "Other"
   ],
   "activationEvents": [
@@ -60,15 +61,30 @@
   },
   "keywords": [
     "time tracking",
-    "coding",
-    "productivity",
-    "charts"
+    "coding time tracker",
+    "developer productivity",
+    "VS Code timer",
+    "coding analytics",
+    "status bar clock",
+    "code insights",
+    "productivity tools",
+    "coding efficiency"
   ],
   "badges": [
     {
-      "url": "https://img.shields.io/badge/version-0.0.1-blue.svg",
-      "href": "https://marketplace.visualstudio.com/items?itemName=Codeclocktrack.my-code-time-tracker",
-      "description": "Version"
+      "url": "https://img.shields.io/badge/version-0.4.0-blue.svg",
+      "href": "https://marketplace.visualstudio.com/items?itemName=Codeclocktrack.code-clock-tracker",
+      "description": "Latest Version"
+    },
+    {
+      "url": "https://img.shields.io/github/stars/Hiteshydv001/CodeClock?style=social",
+      "href": "https://github.com/Hiteshydv001/CodeClock",
+      "description": "GitHub Stars"
+    },
+    {
+      "url": "https://img.shields.io/visual-studio-marketplace/r/Codeclocktrack.code-clock-tracker",
+      "href": "https://marketplace.visualstudio.com/items?itemName=Codeclocktrack.code-clock-tracker",
+      "description": "Marketplace Rating"
     }
   ]
 }

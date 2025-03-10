@@ -1,92 +1,123 @@
-# Code Time Tracker
+# 🎯 Code Time Tracker
 
-Welcome to **Code Time Tracker**, a powerful and lightweight Visual Studio Code extension designed to help you track and analyze your coding time with a sleek and modern interface.
+Welcome to **Code Time Tracker** – a sleek, lightweight, and powerful **VS Code extension** designed to help you track and analyze your coding time effortlessly. Stay productive, gain insights, and boost your efficiency with real-time tracking! 🚀
 
-## Features
+---
 
-### ⏳ Real-Time Time Tracking
-- Automatically logs the time spent on each file while coding.
-- Updates the total time dynamically as you work.
+## ✨ Features at a Glance
 
-### 📊 Visual Analytics
-- Displays a **Timer Widget** showing:
-  - Total time spent coding.
-  - The active file being edited.
-  - Pause and resume buttons for manual control.
-- A **Bar Chart** visualizing time spent per file.
-- A **Status Bar Clock** in the bottom-right corner displaying elapsed time.
+### ⏳ **Real-Time Tracking**
+✔️ Automatically logs time spent on each file.  
+✔️ Dynamic updates as you work – no manual input needed!
 
-### 🎯 Pause/Resume Feature
-- Easily pause and resume tracking when taking breaks.
-- Ensures accuracy in logged coding hours.
+### 📊 **Visual Analytics & Insights**
+✔️ **Live Timer Widget** displaying:
+   - ⏲️ Total coding time
+   - 📂 Active file being edited
+   - ⏸️ Pause & ▶ Resume buttons
+✔️ **Bar Chart Visualization** – see coding time per file.
+✔️ **Status Bar Clock** – always visible in VS Code.
 
-### 📌 Persistent Data Tracking
-- Time logs persist even after restarting VS Code.
-- Helps maintain accurate long-term coding activity records.
+### 🎯 **Pause & Resume Tracking**
+✔️ Need a break? **Pause** the tracker anytime.  
+✔️ Hit **Resume** when you’re back at it.  
+✔️ Ensures precise time logging.
 
-### ⚡ Lightweight and Non-Intrusive
-- Runs efficiently in the background without slowing down VS Code.
+### 📌 **Persistent Data Tracking**
+✔️ Logs persist even after restarting VS Code.  
+✔️ Helps maintain long-term coding activity records.
 
-## Installation
+### ⚡ **Lightweight & Non-Intrusive**
+✔️ Runs efficiently in the background.  
+✔️ No performance slowdowns, just seamless tracking.
 
-1. Open Visual Studio Code.
+---
+
+## 📊 Visual Analytics & Insights
+![Code Time Tracker Widget](app1.jpg)
+
+![Code Time Tracker Widget](app2.jpg)
+
+
+## 🚀 Installation
+
+1. Open **Visual Studio Code**.
 2. Go to the **Extensions Marketplace**.
 3. Search for `Code Time Tracker`.
 4. Click **Install**.
 5. Activate the extension by running `Show Code Time Tracker` from the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`).
 
-## How to Use
+---
 
-### Step 1: Launch the Timer Widget
-- Open the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`).
-- Type `Show Code Time Tracker` and select it.
-- The Timer Widget and Chart will appear in a webview panel.
+## 📌 How to Use
 
-### Step 2: Start Coding and Track Time
-- Open any file and start editing.
-- The **Total Time** updates dynamically.
-- The **Active File** section shows the currently edited file.
-- The **Bar Chart** updates with time spent on each file.
+### 🎬 **Step 1: Launch the Timer Widget**
+🔹 Open the **Command Palette** (`Ctrl+Shift+P` / `Cmd+Shift+P`).  
+🔹 Type `Show Code Time Tracker` and select it.  
+🔹 The **Timer Widget & Chart** will appear in a webview panel.
 
-### Step 3: Pause/Resume Tracking
-- Click the **Pause** button to stop tracking temporarily.
-- Click **Resume** to continue logging time.
+### 🎯 **Step 2: Start Coding & Track Time**
+🟢 Open any file and begin coding.  
+🟢 **Total Time** updates dynamically.  
+🟢 The **Active File** section shows the file you’re editing.  
+🟢 The **Bar Chart** visualizes time spent per file.
 
-### Step 4: Monitor Time in the Status Bar
-- The **Status Bar Clock** displays total coding duration.
-- Hover over it for additional details.
+### ⏸ **Step 3: Pause & Resume Tracking**
+⏸ Click **Pause** to stop tracking temporarily.  
+▶ Click **Resume** to continue logging time.
 
-## Requirements
-- VS Code version `1.60.0` or later.
+### ⌛ **Step 4: Monitor Time in the Status Bar**
+📌 A **Status Bar Clock** shows total coding duration.  
+🖱 Hover over it for additional insights.
 
-## Extension Settings
-This extension contributes the following settings:
+---
 
-- `codeTimeTracker.enable`: Enable/disable time tracking.
-- `codeTimeTracker.resetTime`: Reset tracked time manually.
+## 🛠 Extension Settings
+This extension provides the following customizable settings:
 
-## Known Issues
-- The timer may reset when VS Code crashes unexpectedly.
-- Performance may vary slightly on very large projects.
+- `codeTimeTracker.enable`: ✅ Enable/disable time tracking.
+- `codeTimeTracker.resetTime`: 🔄 Manually reset tracked time.
 
-## Release Notes
+---
 
-### 1.0.0
-- Initial release of Code Time Tracker.
+## 🚀 Upcoming Features
+🔹 **Project-based Time Tracking** – monitor time per project!  
+🔹 **Custom Reports** – export data for better productivity analysis.  
+🔹 **Dark Mode Support** – for an even sleeker UI.  
 
-### 1.1.0
-- Added **Status Bar Clock**.
-- Improved performance and UI responsiveness.
+---
 
-## Contributing
-We welcome contributions! If you’d like to improve this extension, submit a pull request or open an issue on GitHub.
+## ⚠ Known Issues
+- ⏳ The timer may reset if VS Code crashes unexpectedly.  
+- 📁 Performance may vary on very large projects.
 
-## Support
-For any issues or feature requests, please visit our [GitHub Repository](https://github.com/Hiteshydv001/CodeClock/issues).
+---
 
-## License
+## 📜 Release Notes
+
+### 🔥 **Version 1.1.0** (Latest)
+✔️ Added **Status Bar Clock**.  
+✔️ Improved performance and UI responsiveness.  
+
+### 🚀 **Version 1.0.0**
+✔️ Initial release of Code Time Tracker.
+
+---
+
+## 💡 Contributing
+We ❤️ open-source contributions! If you’d like to enhance this extension, feel free to submit a **pull request** or open an **issue** on [GitHub](https://github.com/Hiteshydv001/CodeClock/issues).  
+
+---
+
+## 💬 Need Help?
+For issues, feature requests, or support, visit our [GitHub Repository](https://github.com/Hiteshydv001/CodeClock/issues).  
+
+---
+
+## 📜 License
 This extension is released under the [MIT License](LICENSE).
 
 ---
 
-Enjoy coding with **Code Time Tracker**! 🚀
+🚀 **Happy Coding with Code Time Tracker!** ⏳💻
+
