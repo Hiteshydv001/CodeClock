@@ -8,7 +8,9 @@
     "vscode": "^1.60.0"
   },
   "categories": [
-    "Productivity",
+    "Visualization",
+    "Formatters",
+    "Education",
     "Other"
   ],
   "activationEvents": [
