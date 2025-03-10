@@ -3,7 +3,7 @@
   "displayName": "Code Clock Tracker",
   "publisher": "Codeclocktrack",
   "description": "Boost your coding productivity with Code Clock Tracker - a lightweight VS Code extension that tracks coding time, provides insightful charts, and displays a live coding timer in the status bar.",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "engines": {
     "vscode": "^1.60.0"
   },
